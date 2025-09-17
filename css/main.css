@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug{
+    /* width: 100%; */
+    height: 250px;
+    background-color: aqua;
+    margin: 5%;
+}
+
+.sizing-card{
+    width: calc((80% / 3) - 30px);
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.3);
+}
+
+.gutter{
+    gap: 30px;
+}
+
+.no-border-radius{
+    border-radius: 0;
+}
+
+h1{
+    font-family: "Edu Tas Beginner", sans-serif;
+    font-weight: 900;
+    font-size: 90px;
+    margin: 0;
+    padding: 30px;
+}
+
+p{
+    font-family: "Edu Tas Beginner", sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+
+main{
+    background-image: url("../img/cork.png");
+}
+
+header{
+    background-image: url("../img/wall.png");
+    height: 100%;
+}
+
+.pin{
+    position: absolute;
+    left: 45%;
+    top: -18px;
+}
