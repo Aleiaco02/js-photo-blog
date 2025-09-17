@@ -47,15 +47,29 @@ header{
     height: 100%;
 }
 
-.pin{
-    position: absolute;
-    left: 45%;
-    top: -18px;
-}
-
 span{
     color: grey;
     font-family: "Sometype Mono", "monospace";
     font-weight: 100;
     margin-bottom: 10px;
+}
+
+.card::before{
+    content: url("../img/pin.svg");
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .sizing-card{
+        width: calc((85% / 2) - 30px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sizing-card{
+        width: calc(80% - 30px);
+    }
 }

@@ -13,12 +13,9 @@ axios.get(endPoint)
         elements.data.forEach(singleElement => {
             console.log(singleElement);
 
-            
-
             outputString += `
                 <div class="card sizing-card no-border-radius">
                     <div>
-                        <img class="pin" src="img/pin.svg" alt="pin">
                         <img class="debug" src="${singleElement.url}" alt="${singleElement.url}">
                     </div>
                     <div class="card-body">
@@ -29,10 +26,6 @@ axios.get(endPoint)
             `;
         });
         containerMain.innerHTML = outputString;
-
-
-        
-
 
     })
 
